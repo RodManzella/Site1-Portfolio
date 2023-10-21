@@ -18,3 +18,19 @@ header{
     background-color: rgb(235, 142, 30);
 }
 
+.plano-fundo{
+    background-image: url(../images/arvores-background.jpg);
+    background-size: cover;
+    height: 92vh;
+}
+
+.gameplay{
+    width: 50%;                                  
+    height: 500px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
