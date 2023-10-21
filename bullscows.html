@@ -8,15 +8,34 @@
 </head>
 <body>
     <header>
-        <h1>Play Bulls and Cows for free!</h1>
+        <h1 class="h1-header">Play Bulls and Cows for free!</h1>
     </header>
 
     <main class="plano-fundo">
-        <div class="gameplay">
+        <div class="before-start">
+            <h1 class="game-info">Try to guess the 4 digit number!</h1>
+            <button id="play-button">Start</button>
+        </div>
+
+        <div class="after-start">
+            <h1 class="game-info-start">A random 4 digit number was generated, try to guess!</h1>
+            <div id="game-screen">
+
+                <h2>Your input</h2>
+                <input type="text" placeholder="4 digit number">
+                <button id="guess-button"></button>
+                
+                <div id="tips">
+                    <h6>Bulls: <span id="bulls"></span></h6>
+                    <h6>Cows: <span id="cows"></span></h6>
+                </div>
+                
+            </div>
+
             
         </div>
     </main>
     
-    
+    <script src="js/game.js"></script>
 </body>
 </html>

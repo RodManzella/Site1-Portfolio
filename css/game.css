@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-h1{
+.h1-header{
     font-size: 32px;
     color: white;
     text-shadow: 2px 2px 0 #000;
@@ -24,7 +24,8 @@ header{
     height: 92vh;
 }
 
-.gameplay{
+.before-start{
+    display: none;
     width: 50%;                                  
     height: 500px;
     background-color: antiquewhite;
@@ -33,4 +34,75 @@ header{
     margin: 0 auto;
     position: relative;
     top: 100px;
+    text-align: center;
 }
+
+#game-screen{
+    position: relative;
+    top: 50px;
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px dashed black;
+    border-radius: 5px;
+}
+
+#tips{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: aliceblue;
+    width: 100%;
+    text-align: left;
+}
+
+#tips h6{
+    font-size: 30px;
+}
+
+h1.game-info{
+    display: none;
+    color: rgb(124, 83, 6);
+    text-shadow: 2px 2px 0 #fff;
+}
+
+h1.game-info-start{
+    color: rgb(124, 83, 6);
+    text-shadow: 2px 2px 0 #fff;
+}
+
+
+
+#play-button{
+    display: none;
+    margin: 120px auto;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: green;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 0 #000;
+    transition: background-color 0.3s ease;
+}
+
+#play-button:hover{
+    background-color: lightgreen;
+    color: rgb(180, 223, 208);
+    cursor: pointer;
+}
+
+.after-start{
+    width: 50%;                                  
+    height: 500px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+
