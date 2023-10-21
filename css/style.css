@@ -26,6 +26,8 @@
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #23232e;
     height: 8vh;
+    position: fixed;
+    width: 100%;
   }
   
   body {
