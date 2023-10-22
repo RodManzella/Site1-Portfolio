@@ -1,14 +1,19 @@
+/*Global reset----------------------*/
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+/*-------------------------------------*/
 
+
+/*Header--------------------------------------*/
 .h1-header{
     font-size: 32px;
     color: white;
     text-shadow: 2px 2px 0 #000;
 }
+
 
 header{
     text-align: center;
@@ -17,12 +22,16 @@ header{
     padding-top: 15px;
     background-color: rgb(235, 142, 30);
 }
+/*-------------------------------------------------*/
 
+/*Main------------------------------------------------*/
 .plano-fundo{
     background-image: url(../images/arvores-background.jpg);
     background-size: cover;
     height: 92vh;
 }
+/*-----------------------------------------------------*/
+
 
 .before-start{
     width: 50%;                                  
@@ -129,5 +138,51 @@ h1.game-info-start{
     top: 100px;
     text-align: center;
 }
+
+
+/*Victory Screen---------------------*/
+
+#victory_screen{
+    display: none;
+    width: 50%;                                  
+    height: 500px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+.win-phrase{
+    display: none;
+}
+
+/*----------------------------------*/
+
+
+
+/*Defeat Screen-----------------------*/
+
+#victory_screen{
+    display: none;
+    width: 50%;                                  
+    height: 500px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+.lose-phrase{
+    display: none;
+}
+
+
+/*--------------------------------------*/
 
 
