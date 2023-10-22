@@ -1,5 +1,6 @@
 
 const audio_pregame = document.querySelector("#audio-pregame")
+const audioButton = document.querySelector("#sound")
 const start_button = document.querySelector("#play-button")
 const guessButton = document.querySelector("#guess-button")
 const start_button_screen = document.querySelector(".before-start")
@@ -46,6 +47,23 @@ guessButton.onclick = () => {
         cows_text.innerHTML = cows
         document.getElementById("guess-input").value =  "";
      }
+  }
+
+  // audio on/off
+
+  audioButton.onclick = () =>{
+    // if(audioButton.innerHTML == "&#128266;"){
+    //     audio_pregame.volume = 0
+    //     audioButton.innerHTML = "&#128263;"
+    // }else{
+    //     audioButton.innerHTML = "&#128266;"
+    //     audio_pregame.volume = 0.2
+    // }
+    
+        audio_pregame.volume = 0
+        audioButton.innerHTML = "&#128263;"
+    
+
   }
 
 

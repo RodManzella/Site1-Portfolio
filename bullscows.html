@@ -9,11 +9,14 @@
 <body>
     <header>
         <h1 class="h1-header">Play Bulls and Cows for free!</h1>
+        <a href="index.html">Return</a>
     </header>
 
     <main class="plano-fundo">
         <div class="before-start">
-            <h1 class="game-info">Try to guess the 4 digit number!</h1>
+            <div>
+                <h1 class="game-info">Try to guess the 4 digit number!</h1>
+            </div>
             <button id="play-button">Start</button>
             <audio id="audio-pregame" autoplay loop>
                 <source src="" type="audio/mpeg">
@@ -23,6 +26,7 @@
 
         <div class="after-start">
             <h1 class="game-info-start">A random 4 digit number was generated, try to guess!</h1>
+            <button id="sound">&#128266;</button>
             <div id="game-screen">
                 <div class="life-space">
                     <h3>Lifes:<span class="lifes"></span></h3>
@@ -50,6 +54,7 @@
         <div class="defeat-screen">
             <h1 class="defeat-phrase">You lost!</h1>
         </div>
+        
     </main>
     
     <script src="js/game.js"></script>

@@ -12,8 +12,28 @@
     font-size: 32px;
     color: white;
     text-shadow: 2px 2px 0 #000;
+    display: inline;
 }
 
+header a{
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    bottom: 3px;
+    padding: 5px;
+}
+
+header a:hover{
+    background-color: #f7cf1d;
+    color: white;
+    text-shadow: 1px 1px 0 #000;
+}
 
 header{
     text-align: center;
@@ -93,18 +113,18 @@ header{
     font-size: 30px;
     background-color: rgb(224, 191, 0);
     color: white;
-    text-shadow: 2px 2px 0 #000000;
     text-align: left;
     padding: 1px 5px;
     border-radius: 10px;
     margin-top: 5px;
+    border: 2px solid black;
 
 }
 
 #tips span{
     font-size: 30px;
     color: black;
-    text-shadow: 2px 2px 0 #ffffff;
+    text-shadow: 0.5px 0.5px 0 #ffffff;
 }
 
 
@@ -121,8 +141,8 @@ h1.game-info{
 
 #play-button{
     margin: 120px auto;
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     border-radius: 10px;
     background-color: green;
     font-size: 50px;
@@ -154,6 +174,13 @@ h1.game-info{
 h1.game-info-start{
     color: rgb(124, 83, 6);
     text-shadow: 2px 2px 0 #fff;
+    display: inline-block;
+}
+
+.lifes{
+    position: relative;
+    left: 15px;
+    
 }
 
 
@@ -213,3 +240,12 @@ h1.defeat-phrase{
 /*--------------------------------------*/
 
 
+#sound{
+    display: inline-block;
+    width: 40px;
+    padding: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+}
