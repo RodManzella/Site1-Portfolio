@@ -20,24 +20,24 @@ start_button.onclick = () =>{
 
 guessButton.onclick = () => {
     let guess = document.getElementById("guess-input").value;
-     let result = check_guess(randomNumber, guess);
+    let result = check_guess(randomNumber, guess);
 
-     console.log("teste 0.5")
-     console.log(randomNumber)
-     cows = 0;
-     bulls = 0;
-     if(rounds == 0) defeatScreen();
-     console.log("teste 1")
+    console.log("teste 0.5")
+    console.log(randomNumber)
+    cows = 0;
+    bulls = 0;
+    if(rounds == 0) defeatScreen();
+    console.log("teste 1")
 
-     if(result){
-         victoryScreen();
-         console.log("teste 2")
-     }else{
+    if(result){
+        victoryScreen();
+        console.log("teste 2")
+    }else{
         console.log("teste 3")
         console.log(typeof(guess))
-          rounds--;
-          update_bulls_cows(randomNumber, guess);
-          document.getElementById("guess-input").value =  "";
+        rounds--;
+        update_bulls_cows(randomNumber, guess);
+        document.getElementById("guess-input").value =  "";
      }
   }
 
