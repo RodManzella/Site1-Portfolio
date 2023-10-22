@@ -3,6 +3,7 @@ const start_button = document.querySelector("#play-button")
 const guessButton = document.querySelector("#guess-button")
 const start_button_screen = document.querySelector(".before-start")
 const game_screen = document.querySelector(".after-start")
+const victory_screen = document.querySelector(".victory-screen")
 let bulls_text = document.querySelector("#bulls")
 let cows_text = document.querySelector("#cows")
 let valorInput;
@@ -50,6 +51,10 @@ function random_number(){
 
 function showScreen(){
     game_screen.style.display = "block";
+}
+
+function victoryScreen(){
+    victory_screen.style.display = "block";
 }
 
  function game_start(){
