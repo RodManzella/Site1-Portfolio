@@ -20,19 +20,20 @@
         <div class="after-start">
             <h1 class="game-info-start">A random 4 digit number was generated, try to guess!</h1>
             <div id="game-screen">
-
-                <h2>Your input</h2>
-                <input type="text" placeholder="4 digit number">
-                <button id="guess-button"></button>
+                <div class="life-space">
+                    <h3>Lifes:<span class="lifes"></span></h3>
+                </div>
+                <div class="input-space">
+                    <h2>Your input</h2>
+                    <input type="text" placeholder="4 digit number" maxlength="4" id="guess-input">
+                    <button id="guess-button">Guess</button>
+                </div>
                 
                 <div id="tips">
                     <h6>Bulls: <span id="bulls"></span></h6>
                     <h6>Cows: <span id="cows"></span></h6>
                 </div>
-                
-            </div>
-
-            
+            </div> 
         </div>
     </main>
     

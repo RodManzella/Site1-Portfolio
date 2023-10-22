@@ -25,7 +25,6 @@ header{
 }
 
 .before-start{
-    display: none;
     width: 50%;                                  
     height: 500px;
     background-color: antiquewhite;
@@ -48,6 +47,31 @@ header{
     border-radius: 5px;
 }
 
+.input-space{
+    position: relative;
+    top: 80px;
+}
+
+.input-space input{
+    width: 200px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.input-space button{
+    padding: 5px;
+    background-color: rgb(24, 247, 24);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.input-space button:hover{
+    background-color: lightgreen;
+    color: rgb(180, 223, 208);
+    cursor: pointer;
+}
+
 #tips{
     position: absolute;
     bottom: 0;
@@ -61,8 +85,9 @@ header{
     font-size: 30px;
 }
 
+
+
 h1.game-info{
-    display: none;
     color: rgb(124, 83, 6);
     text-shadow: 2px 2px 0 #fff;
 }
@@ -75,7 +100,6 @@ h1.game-info-start{
 
 
 #play-button{
-    display: none;
     margin: 120px auto;
     width: 300px;
     height: 200px;
@@ -94,6 +118,7 @@ h1.game-info-start{
 }
 
 .after-start{
+    display: none;
     width: 50%;                                  
     height: 500px;
     background-color: antiquewhite;
