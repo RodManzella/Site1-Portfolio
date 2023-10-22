@@ -1,4 +1,6 @@
 
+const audio_pregame = document.querySelector("#audio-pregame")
+audio_pregame.volume = 0.1
 const start_button = document.querySelector("#play-button")
 const guessButton = document.querySelector("#guess-button")
 const start_button_screen = document.querySelector(".before-start")
@@ -20,6 +22,8 @@ start_button.onclick = () =>{
     start_button_screen.style.display = "none";
     showScreen();
     life.innerHTML = rounds
+    audio_pregame.src = "music/Slower-Tempo-2020-03-22_-_8_Bit_Surf_-_FesliyanStudios.com_-_David_Renda.mp3"
+    audio_pregame.volume = 0.2
 }
 
 // jogo

@@ -48,12 +48,13 @@ header{
 #game-screen{
     position: relative;
     top: 50px;
-    width: 50%;
+    width: 40%;
     height: 300px;
     margin: 0 auto;
     background-color: white;
-    border: 2px dashed black;
+    border: 2px solid black;
     border-radius: 5px;
+    padding: 20px;
 }
 
 .input-space{
@@ -84,15 +85,29 @@ header{
 #tips{
     position: absolute;
     bottom: 0;
-    left: 0;
-    background-color: aliceblue;
-    width: 100%;
-    text-align: left;
+    left: 110px;
+    width: 40%;
 }
 
 #tips h6{
     font-size: 30px;
+    background-color: rgb(224, 191, 0);
+    color: white;
+    text-shadow: 2px 2px 0 #000000;
+    text-align: left;
+    padding: 1px 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+
 }
+
+#tips span{
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px 0 #ffffff;
+}
+
+
 
 
 
