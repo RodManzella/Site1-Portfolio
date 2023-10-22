@@ -1,6 +1,5 @@
 
 const audio_pregame = document.querySelector("#audio-pregame")
-audio_pregame.volume = 0.1
 const start_button = document.querySelector("#play-button")
 const guessButton = document.querySelector("#guess-button")
 const start_button_screen = document.querySelector(".before-start")
