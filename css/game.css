@@ -101,10 +101,6 @@ h1.game-info{
     text-shadow: 2px 2px 0 #fff;
 }
 
-h1.game-info-start{
-    color: rgb(124, 83, 6);
-    text-shadow: 2px 2px 0 #fff;
-}
 
 
 
@@ -126,6 +122,7 @@ h1.game-info-start{
     cursor: pointer;
 }
 
+
 .after-start{
     display: none;
     width: 50%;                                  
@@ -139,10 +136,15 @@ h1.game-info-start{
     text-align: center;
 }
 
+h1.game-info-start{
+    color: rgb(124, 83, 6);
+    text-shadow: 2px 2px 0 #fff;
+}
+
 
 /*Victory Screen---------------------*/
 
-#victory_screen{
+.victory-screen{
     display: none;
     width: 50%;                                  
     height: 500px;
@@ -155,9 +157,15 @@ h1.game-info-start{
     text-align: center;
 }
 
-.win-phrase{
-    display: none;
+h1.victory-phrase{
+    margin-top: 20px;
+    color: rgb(25, 189, 38);
+    text-shadow: 2px 2px 0 #fff;
 }
+
+
+
+
 
 /*----------------------------------*/
 
@@ -165,7 +173,7 @@ h1.game-info-start{
 
 /*Defeat Screen-----------------------*/
 
-#victory_screen{
+.defeat-screen{
     display: none;
     width: 50%;                                  
     height: 500px;
@@ -178,9 +186,13 @@ h1.game-info-start{
     text-align: center;
 }
 
-.lose-phrase{
-    display: none;
+h1.defeat-phrase{
+    margin-top: 20px;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 0 #fff;
 }
+
+
 
 
 /*--------------------------------------*/

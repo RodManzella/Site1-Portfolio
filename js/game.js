@@ -4,6 +4,8 @@ const guessButton = document.querySelector("#guess-button")
 const start_button_screen = document.querySelector(".before-start")
 const game_screen = document.querySelector(".after-start")
 const victory_screen = document.querySelector(".victory-screen")
+const defeat_screen = document.querySelector(".defeat-screen")
+let life = document.querySelector(".lifes")
 let bulls_text = document.querySelector("#bulls")
 let cows_text = document.querySelector("#cows")
 let valorInput;
@@ -17,6 +19,7 @@ let bulls;
 start_button.onclick = () =>{
     start_button_screen.style.display = "none";
     showScreen();
+    life.innerHTML = rounds
 }
 
 // jogo
@@ -29,16 +32,15 @@ guessButton.onclick = () => {
     cows = 0;
     bulls = 0;
     if(rounds == 0) defeatScreen();
-    console.log("teste 1")
 
     if(result){
         victoryScreen();
-        console.log("teste 2")
     }else{
-        console.log("teste 3")
-        console.log(typeof(guess))
         rounds--;
+        life.innerHTML = rounds
         update_bulls_cows(String(randomNumber), guess);
+        bulls_text.innerHTML = bulls
+        cows_text.innerHTML = cows
         document.getElementById("guess-input").value =  "";
      }
   }
@@ -54,7 +56,13 @@ function showScreen(){
 }
 
 function victoryScreen(){
+    game_screen.style.display = "none";
     victory_screen.style.display = "block";
+}
+
+function defeatScreen(){
+    game_screen.style.display = "none";
+    defeat_screen.style.display = "block";
 }
 
  function game_start(){
