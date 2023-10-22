@@ -12,12 +12,13 @@ let cows;
 let bulls;
 
 
-
+// pré-jogo
 start_button.onclick = () =>{
     start_button_screen.style.display = "none";
     showScreen();
 }
 
+// jogo
 guessButton.onclick = () => {
     let guess = document.getElementById("guess-input").value;
     let result = check_guess(randomNumber, guess);
@@ -36,22 +37,13 @@ guessButton.onclick = () => {
         console.log("teste 3")
         console.log(typeof(guess))
         rounds--;
-        for(let i = 0; i < 4; i++){
-            if(guess[i] == realNumber[i]){
-                bulls++;
-            }
-    
-            if(realNumber.indexOf(guess[i]) !== -1){
-                cows++;
-            }
-        }
-        bulls_text.innerHTML = bulls
-        cows_text.innerHTML = cows
+        update_bulls_cows(String(randomNumber), guess);
         document.getElementById("guess-input").value =  "";
      }
   }
 
 
+// funções auxiliares-----------------------------------------
 function random_number(){
     return Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000;
 }
@@ -66,7 +58,15 @@ function showScreen(){
 }
 
 function update_bulls_cows(realNumber, guess){
-    
+    for(let i = 0; i < 4; i++){
+        if(guess[i] == realNumber[i]){
+            bulls++;
+        }
+
+        if(realNumber.includes(guess[i])){
+            cows++;
+        }
+    }
 }
 
 function check_guess(realNumber, guess){
