@@ -36,7 +36,17 @@ guessButton.onclick = () => {
         console.log("teste 3")
         console.log(typeof(guess))
         rounds--;
-        update_bulls_cows(randomNumber, guess);
+        for(let i = 0; i < 4; i++){
+            if(guess[i] == realNumber[i]){
+                bulls++;
+            }
+    
+            if(realNumber.indexOf(guess[i]) !== -1){
+                cows++;
+            }
+        }
+        bulls_text.innerHTML = bulls
+        cows_text.innerHTML = cows
         document.getElementById("guess-input").value =  "";
      }
   }
@@ -56,15 +66,7 @@ function showScreen(){
 }
 
 function update_bulls_cows(realNumber, guess){
-    for(let i = 0; i < 4; i++){
-        if(guess[i] == realNumber[i]){
-            bulls++;
-        }
-
-        if(realNumber.indexOf(guess[i]) !== -1){
-            cows++;
-        }
-    }
+    
 }
 
 function check_guess(realNumber, guess){
