@@ -31,9 +31,10 @@
   }
   
   body {
-    background: url("../images/background.jpg") no-repeat center center;
+    /* background: url("../images/background.jpg") no-repeat center center;
     background-size: cover;
-    height: 92vh;
+    height: 92vh; */
+    background-color: #191920;
   }
   
   .nav-list {
@@ -44,6 +45,19 @@
   .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+  }
+
+  .conteudo-principal{
+    top: 120px;
+    position: relative;
+    border: 1px solid red;
+    width: 80%;
+    margin: 0px auto;
+    z-index: -1;
+  }
+
+  .conteudo-apresentacao{
+
   }
   
   .mobile-menu {
