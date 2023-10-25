@@ -1,9 +1,10 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
 
   
   h1 {
@@ -178,10 +179,19 @@ body {
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
-  a {
-    color: #fff;
+  a.logo {
+    background-image: linear-gradient(to right,#e63b32,#e66532, #e6a732);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
-    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+
+  a{
+    text-decoration: none;
+    color: #fff;
   }
   
   a:hover {
@@ -199,7 +209,7 @@ body {
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
+    background: #000000;
     height: 8vh;
     position: fixed;
     width: 100%;
