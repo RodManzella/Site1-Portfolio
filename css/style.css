@@ -34,6 +34,7 @@
     height: 8vh;
     position: fixed;
     width: 100%;
+    z-index: 100;
   }
 
   .frases-intro{
@@ -96,6 +97,7 @@
   .nav-list {
     list-style: none;
     display: flex;
+    z-index: 100;
   }
   
   .nav-list li {
@@ -113,7 +115,7 @@
 
   .conteudo-apresentacao{
     position: relative;
-    width: 70%;
+    width: 80%;
     margin: 0px auto;
     height: 800px;
   }
