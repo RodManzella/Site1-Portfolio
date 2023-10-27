@@ -7,6 +7,10 @@ const start_button_screen = document.querySelector(".before-start")
 const game_screen = document.querySelector(".after-start")
 const victory_screen = document.querySelector(".victory-screen")
 const defeat_screen = document.querySelector(".defeat-screen")
+
+const retry_button = document.querySelector("#retry")
+const play_again = document.querySelector("#play-again")
+
 let life = document.querySelector(".lifes")
 let bulls_text = document.querySelector("#bulls")
 let cows_text = document.querySelector("#cows")
@@ -15,6 +19,7 @@ let rounds = 10
 let randomNumber = random_number()
 let cows;
 let bulls;
+
 
 
 // pré-jogo
@@ -64,6 +69,14 @@ guessButton.onclick = () => {
         audioButton.innerHTML = "&#128263;"
     
 
+  }
+
+  play_again.onclick = () =>{
+    showScreen()
+  }
+
+  retry_button.onclick = () =>{
+    showScreen()
   }
 
 

@@ -205,6 +205,12 @@ h1.victory-phrase{
     text-shadow: 2px 2px 0 #fff;
 }
 
+#play-again a{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
 #play-again{
     margin: 120px auto;
     width: 250px;
@@ -217,11 +223,12 @@ h1.victory-phrase{
     transition: background-color 0.3s ease;
 }
 
-#play-again :hover{
+#play-again:hover{
     background-color: lightgreen;
     color: rgb(180, 223, 208);
     cursor: pointer;
 }
+
 
 
 
@@ -262,7 +269,12 @@ h1.defeat-phrase{
     color: white;
     text-shadow: 2px 2px 0 #000;
     transition: background-color 0.3s ease;
-    z-index: 100;
+}
+
+#retry:hover{
+    background-color: lightgreen;
+    color: rgb(180, 223, 208);
+    cursor: pointer;
 }
 
 
