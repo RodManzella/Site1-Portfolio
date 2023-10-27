@@ -124,11 +124,12 @@
     display: inline-block;
     position: absolute;
     width:200px;
-    border-radius: 50%;
+    border-radius: 20px;
     top: 70px;
     right: 0px;
     filter: grayscale(0%);
-    border: 3px solid rgb(251, 255, 11);
+    box-shadow: 0 0 30px cyan,
+    0 0 25px cyan;
   }
 
   

@@ -54,7 +54,7 @@ header{
 
 
 .before-start{
-    width: 70%;                                  
+    width: 90%;                                  
     height: 500px;
     background-color: antiquewhite;
     border: 2px solid black;
@@ -68,22 +68,21 @@ header{
 #game-screen{
     position: relative;
     top: 50px;
-    width: 50%;
+    width: 40%;
     height: 300px;
     margin: 0 auto;
     background-color: white;
     border: 2px solid black;
     border-radius: 5px;
-    padding: 20px;
 }
 
 .input-space{
     position: relative;
-    top: 80px;
+    top: 50px;
 }
 
 .input-space input{
-    width: 200px;
+    width: 25%;
     padding: 5px;
     border: 2px solid black;
 }
@@ -103,13 +102,15 @@ header{
 }
 
 #tips{
-    position: absolute;
-    bottom: 0;
-    left: 110px;
-    width: 30%;
+    display: block;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #tips h6{
+    display: inline-block;
     font-size: 30px;
     background-color: rgb(224, 191, 0);
     color: white;
@@ -160,7 +161,7 @@ h1.game-info{
 
 .after-start{
     display: none;
-    width: 70%;                                  
+    width: 90%;                                  
     height: 500px;
     background-color: antiquewhite;
     border: 2px solid black;
@@ -188,7 +189,7 @@ h1.game-info-start{
 
 .victory-screen{
     display: none;
-    width: 70%;                                  
+    width: 40%;                                  
     height: 500px;
     background-color: antiquewhite;
     border: 2px solid black;
@@ -205,11 +206,6 @@ h1.victory-phrase{
     text-shadow: 2px 2px 0 #fff;
 }
 
-#play-again a{
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-}
 
 #play-again{
     margin: 120px auto;
@@ -242,7 +238,7 @@ h1.victory-phrase{
 
 .defeat-screen{
     display: none;
-    width: 70%;                                  
+    width: 40%;                                  
     height: 500px;
     background-color: antiquewhite;
     border: 2px solid black;

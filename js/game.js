@@ -40,7 +40,7 @@ guessButton.onclick = () => {
     console.log(randomNumber)
     cows = 0;
     bulls = 0;
-    if(rounds == 0) defeatScreen();
+    if(rounds < 1) defeatScreen();
 
     if(result){
         victoryScreen();
@@ -72,10 +72,12 @@ guessButton.onclick = () => {
   }
 
   play_again.onclick = () =>{
+    victory_screen.style.display = "none";
     showScreen()
   }
 
   retry_button.onclick = () =>{
+    defeat_screen.style.display = "none";
     showScreen()
   }
 
