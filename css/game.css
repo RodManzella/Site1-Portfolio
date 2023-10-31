@@ -68,7 +68,7 @@ header{
 #game-screen{
     position: relative;
     top: 50px;
-    width: 40%;
+    width: 50%;
     height: 300px;
     margin: 0 auto;
     background-color: white;
@@ -161,7 +161,7 @@ h1.game-info{
 
 .after-start{
     display: none;
-    width: 90%;                                  
+    width: 60%;                                  
     height: 500px;
     background-color: antiquewhite;
     border: 2px solid black;
@@ -271,6 +271,15 @@ h1.defeat-phrase{
     background-color: lightgreen;
     color: rgb(180, 223, 208);
     cursor: pointer;
+}
+.table-results{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.table-results table{
+   
 }
 
 

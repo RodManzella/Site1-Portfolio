@@ -11,6 +11,9 @@ const defeat_screen = document.querySelector(".defeat-screen")
 const retry_button = document.querySelector("#retry")
 const play_again = document.querySelector("#play-again")
 
+const table = document.querySelector(".table-results")
+let arr = ['.guess-tabledata', '.bulls-tabledata', '.cows-tabledata']
+
 let life = document.querySelector(".lifes")
 let bulls_text = document.querySelector("#bulls")
 let cows_text = document.querySelector("#cows")
@@ -50,7 +53,8 @@ guessButton.onclick = () => {
         update_bulls_cows(String(randomNumber), guess);
         bulls_text.innerHTML = bulls
         cows_text.innerHTML = cows
-        document.getElementById("guess-input").value =  "";
+        appendTd(guess, bulls, cows)
+
      }
   }
 
@@ -123,6 +127,26 @@ function check_guess(realNumber, guess){
         return true;
     }
     return false;
+}
+
+function appendTd(guess, cows, bulls){
+    let novaLinha = document.createElement("tr");
+    table.appendChild(novaLinha)
+    
+    for(let i = 0; i <= 2; i++){
+        let novaTd = document.createElement("td")
+        if(i == 0){
+            novaTd.classList.add(arr[i])
+            novaLinha.appendChild(novaTd)
+        }else if(i == 1){
+            novaTd.classList.add(arr[i])
+            novaLinha.appendChild(novaTd)
+        }else{
+            novaTd.classList.add(arr[i])
+            novaLinha.appendChild(novaTd)
+        }
+
+    }
 }
 
 
