@@ -11,7 +11,7 @@ const defeat_screen = document.querySelector(".defeat-screen")
 const retry_button = document.querySelector("#retry")
 const play_again = document.querySelector("#play-again")
 
-const table = document.querySelector(".table-results")
+const table = document.querySelector("#table")
 let arr = ['guess-tabledata', 'bulls-tabledata', 'cows-tabledata']
 
 let life = document.querySelector(".lifes")
@@ -129,25 +129,24 @@ function check_guess(realNumber, guess){
     return false;
 }
 
-function appendTd(guess, cows, bulls){
-    let novaLinha = document.createElement("tr");
-    table.appendChild(novaLinha)
-    
-    for(let i = 0; i <= 2; i++){
-        let novaTd = document.createElement("td")
-        if(i == 0){
-            novaTd.classList.add(arr[i])
-            novaLinha.appendChild(novaTd)
-        }else if(i == 1){
-            novaTd.classList.add(arr[i])
-            novaLinha.appendChild(novaTd)
-        }else{
-            novaTd.classList.add(arr[i])
-            novaLinha.appendChild(novaTd)
+function appendTd(guess, bulls, cows) {
+
+    const novaLinha = document.createElement("tr");
+
+    for (let i = 0; i < 3; i++) {
+        let novaTd = document.createElement("td");
+
+        if (i === 0) {
+            novaTd.innerText = guess;
+        } else if (i === 1) {
+            novaTd.innerText = bulls;
+        } else {
+            novaTd.innerText = cows;
         }
 
+        novaLinha.appendChild(novaTd);
     }
+
+    table.appendChild(novaLinha);
 }
-
-
 

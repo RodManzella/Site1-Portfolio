@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 /*-------------------------------------*/
 
@@ -55,7 +56,7 @@ header{
 
 .before-start{
     width: 90%;                                  
-    height: 500px;
+    height: 600px;
     background-color: antiquewhite;
     border: 2px solid black;
     border-radius: 10px;
@@ -68,8 +69,8 @@ header{
 #game-screen{
     position: relative;
     top: 50px;
-    width: 50%;
-    height: 300px;
+    width: 70%;
+    height: 70%;
     margin: 0 auto;
     background-color: white;
     border: 2px solid black;
@@ -275,12 +276,25 @@ h1.defeat-phrase{
 .table-results{
     display: inline-block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 30px;
+    border: 2px solid rgb(78, 78, 78);
 }
-.table-results table{
-   
+
+th{
+    color: #0f9421;
+    text-transform: uppercase;
+    padding: 1px;
+    background-color: #ffeeb6;
 }
+
+td{
+    color: #ffffff;
+    padding: 1px;
+    background-color: #808080;
+}
+
+
 
 
 
