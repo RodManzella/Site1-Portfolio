@@ -12,7 +12,7 @@ const retry_button = document.querySelector("#retry")
 const play_again = document.querySelector("#play-again")
 
 const table = document.querySelector(".table-results")
-let arr = ['.guess-tabledata', '.bulls-tabledata', '.cows-tabledata']
+let arr = ['guess-tabledata', 'bulls-tabledata', 'cows-tabledata']
 
 let life = document.querySelector(".lifes")
 let bulls_text = document.querySelector("#bulls")
