@@ -121,19 +121,20 @@
     position: relative;
     width: 80%;
     margin: 0px auto;
-    height: 800px;
+    min-height: 100vh;
   }
 
   .conteudo-apresentacao .minhafoto{
     display: inline-block;
     position: absolute;
-    width:200px;
-    border-radius: 20px;
-    top: 70px;
-    right: 0px;
+    width:250px;
+    border-radius: 50%;
+    top: 270px;
+    right: 50px;
     filter: grayscale(0%);
     box-shadow: 0 0 30px cyan,
     0 0 25px cyan;
+    text-align: left;
   }
 
   .floating{
@@ -157,6 +158,28 @@
   .meu-paragrafo{
     margin-top: 30px;
     color: #9c9c9c;
+  }
+
+  .espaco-download{
+    position: absolute;
+    bottom: -60px;
+    left: 0px;
+  }
+
+  .downloadCV{
+    background-color: transparent;
+    border-style: none;
+  }
+
+  .downloadCV a{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: rgb(245, 93, 93);
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    
   }
 
   .redes-sociais{
