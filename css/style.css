@@ -110,7 +110,7 @@
   }
 
   .conteudo-principal{
-    top: 90px;
+    top: 100px;
     position: relative;
     width: 100%;
     margin: 0px auto;
@@ -119,7 +119,7 @@
 
   .conteudo-apresentacao{
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
     min-height: 100vh;
   }
@@ -127,16 +127,42 @@
   .conteudo-apresentacao .minhafoto{
     display: inline-block;
     position: absolute;
-    width:250px;
-    border-radius: 50%;
-    top: 270px;
-    right: 50px;
+    width:300px;
+    border-radius: 20%;
+    top: 200px;
+    right: 300px;
     filter: grayscale(0%);
-    box-shadow: 0 0 30px cyan,
-    0 0 25px cyan;
+    box-shadow: 0 0 30px rgb(140, 0, 255),
+    0 0 25px rgb(170, 59, 197);
     text-align: left;
   }
+.sobre-mim{
+  position: relative;
+  top: -100px;
+  margin: 0 auto;
+  width: 90%;
+  min-height: 50vh;
+}
 
+.mim{
+  color: rgb(245, 93, 93);
+}
+
+  .about-me{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .image-man-coding{
+    position: absolute;
+    width: 350px;
+    top: 20px;
+    left:45%;
+    box-shadow: 0 0 30px rgb(253, 119, 101),
+    0 0 25px rgb(170, 59, 197);
+  }
   .floating{
     animation-name: floating;
     animation-duration: 3s;
@@ -259,7 +285,80 @@
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
+  .icons{
+    margin-top: 80px;
+  }
 
+  .icons a{
+    background: #ecf0f3;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    margin: 0 10px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  .icons a:hover:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background: #ecf0f3;
+    box-shadow: inset
+   -3px -3px 7px #ffffff,
+                inset 3px 3px 5px #ceced1;
+  }
+  .icons a i{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    line-height: 60px;
+  }
+  .icons a:hover i{
+    transform: scale(0.9);
+  }
+  .icons a.fb i{
+    color: #4267B2;
+  }
+  .icons a.twitter i{
+    color: #1DA1F2;
+  }
+  .icons a.insta i{
+    color: #E1306C;
+  }
+  .icons a.git i{
+    color: #333;
+  }
+  .icons a.yt i{
+    color: #ff0000;
+  }
+
+  .footerContainer{
+    padding: 20px;
+    position: absolute;
+    bottom: -200px;
+    width: 100%;
+    
+}
   
+
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p{
+  color: white;
+}
+
 
  
