@@ -1,0 +1,42 @@
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* @media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+} */
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.logo:nth-child(4){
+    transition-delay: 600ms;
+}
+
+.logo:nth-child(5){
+    transition-delay: 800ms;
+}
+
+.logo:nth-child(6){
+    transition-delay: 1000ms;
+}
+
+
+
+
