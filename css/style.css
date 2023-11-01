@@ -110,12 +110,14 @@
   }
 
   .conteudo-principal{
-    top: 100px;
+    top: 30px;
     position: relative;
     width: 100%;
     margin: 0px auto;
     
   }
+
+  /*teste*/
 
   .conteudo-apresentacao{
     position: relative;
@@ -141,7 +143,7 @@
   top: 100px;
   margin: 0 auto;
   width: 90%;
-  min-height: 50vh;
+  min-height: 70vh;
 }
 
 .mim{

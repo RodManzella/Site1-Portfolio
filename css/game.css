@@ -49,28 +49,28 @@ header{
 .plano-fundo{
     background-image: url(../images/arvores-background.jpg);
     background-size: cover;
-    height: 92vh;
+    height: 100vh;
 }
 /*-----------------------------------------------------*/
 
 
 .before-start{
-    width: 90%;                                  
-    height: 600px;
+    width: 80%;                                  
+    height: 80%;
     background-color: antiquewhite;
     border: 2px solid black;
     border-radius: 10px;
     margin: 0 auto;
     position: relative;
-    top: 100px;
+    top: 50px;
     text-align: center;
 }
 
 #game-screen{
     position: relative;
     top: 50px;
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     margin: 0 auto;
     background-color: white;
     border: 2px solid black;
@@ -162,7 +162,7 @@ h1.game-info{
 
 .after-start{
     display: none;
-    width: 60%;                                  
+    width: 70%;                                  
     height: 500px;
     background-color: antiquewhite;
     border: 2px solid black;
@@ -190,7 +190,7 @@ h1.game-info-start{
 
 .victory-screen{
     display: none;
-    width: 40%;                                  
+    width: 70%;                                  
     height: 500px;
     background-color: antiquewhite;
     border: 2px solid black;
@@ -239,7 +239,7 @@ h1.victory-phrase{
 
 .defeat-screen{
     display: none;
-    width: 40%;                                  
+    width: 70%;                                  
     height: 500px;
     background-color: antiquewhite;
     border: 2px solid black;

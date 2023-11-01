@@ -76,13 +76,11 @@ guessButton.onclick = () => {
   }
 
   play_again.onclick = () =>{
-    victory_screen.style.display = "none";
-    showScreen()
+    window.location.href = "bullscows.html";
   }
 
   retry_button.onclick = () =>{
-    defeat_screen.style.display = "none";
-    showScreen()
+    window.location.href = "bullscows.html";
   }
 
 
