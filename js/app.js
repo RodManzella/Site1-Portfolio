@@ -11,3 +11,5 @@ const observer = new IntersectionObserver((entries) =>{
 const hiddenElementos = document.querySelectorAll(".hidden");
 
 hiddenElementos.forEach((el) => observer.observe(el));
+
+//teste commit vercel
